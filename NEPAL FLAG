@@ -1,0 +1,114 @@
+HTML
+<svg height="400" width="2000">
+  <path id="outer-line" d="M 50 373 l 0 -352 296 174 -178 0 178 178 z" stroke="black" stroke-width="1" fill="none" />
+  
+  <path id="inner-line" d="M 65 358 l 244 0 -174 -178 157 0 -227 -133 z" stroke="black" stroke-width="1" fill="none" />
+  
+   <path id="moon" d="M103.8,146.6l1.7-3.5l-10.4-4.5l11.1-2.6l-7.5-8.2l11.2,2l-3.4-10.5l9.3,6.3l1.3-11l5.8,9.4l5.8-9.4l1.3,11 	l9.3-6.3l-3.4,10.5l11.2-2l-7.5,8.2l11.1,2.6l-10.4,4.5l1.7,3.5c11.2-5.3,19.9-15.1,23.7-27c0.1,1.3,0.2,2.6,0.2,3.9 	c0,23.8-19.3,43-43,43c-23.8,0-43-19.3-43-43c0-1.3,0.1-2.5,0.2-3.7C84,131.6,92.7,141.3,103.8,146.6z" stroke="black" stroke-width="1" fill="none"/>
+  <polygon id="sun" points="123,317.5 130.4,300.7 145.5,311.4 143.8,293.3 161.9,295 151.3,280 168,272.5 151.3,265 161.9,250 	143.8,251.7 145.5,233.6 130.4,244.3 123,227.5 115.6,244.3 100.5,233.6 102.2,251.7 84.1,250 94.7,265 78,272.5 94.7,280 84.1,295 	102.2,293.3 100.5,311.4 115.6,300.7" stroke="black" stroke-width="1" fill="none"/>
+    Sorry, your browser does not support inline SVG.
+</svg>
+
+
+
+
+CSS
+#outer-line{
+  stroke-dasharray:1422;
+  stroke-dashoffset:1422;
+  fill: #fff;
+  stroke: #000;
+  animation:outer-line 8s linear forwards, fill-blue 2s linear forwards 2s;
+}
+#inner-line{
+   stroke-dasharray:1233;
+  stroke-dashoffset:1233;
+  fill: #fff;
+  stroke: #000;
+  animation:inner-line 2s linear forwards, fill-red 2s linear forwards 4s;
+}
+#moon{
+  stroke-dasharray:404;
+  stroke-dashoffset:404;
+  fill: #fff;
+  stroke: #000;
+  animation:moon 2s linear forwards 2s, fill-white 2s linear forwards 4s;
+  position: absolute;
+}
+#sun{
+   stroke-dasharray:440;
+  stroke-dashoffset:440;
+  fill: #fff;
+  stroke: #000;
+  animation:sun 2s linear forwards 2s, fill-white 2s linear forwards 4s;
+}
+@keyframes outer-line{
+  from{
+   stroke-dashoffset: 1422;
+  }
+  to{
+   stroke-dashoffset: 0;
+  }
+ }
+@keyframes inner-line{
+  from{
+   stroke-dashoffset: 1233;
+  }
+  to{
+   stroke-dashoffset: 0;
+  }
+ }
+@keyframes moon{
+  from{
+   stroke-dashoffset: 404;
+  }
+  to{
+   stroke-dashoffset: 0;
+  }
+ }
+@keyframes sun{
+  from{
+   stroke-dashoffset: 440;
+  }
+  to{
+   stroke-dashoffset: 0;
+  }
+ }
+@keyframes fill-blue{
+  from { 
+    fill: #fff;
+    stroke: #000;
+  }
+  to { 
+    fill: #003490;
+    stroke: #003490;
+  }
+ }
+@keyframes fill-red{
+  from { 
+    fill: #fff;
+    stroke: #000;
+  }
+  to { 
+    fill: #c10516;
+    stroke: #c10516;
+  }
+ }
+@keyframes fill-red{
+  from { 
+    fill: #fff;
+    stroke: #000;
+  }
+  to { 
+    fill: #c10516;
+    stroke: #c10516;
+  }
+ }
+@keyframes fill-white{
+  from { 
+    stroke: #000;
+  }
+  to { 
+    stroke: #fff;
+  }
+ }
