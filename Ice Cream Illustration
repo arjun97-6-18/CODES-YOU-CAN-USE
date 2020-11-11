@@ -1,0 +1,108 @@
+HTML
+<main>
+  <div class="pop">
+    <div class="shadow"></div>
+  </div>
+  <div class="stick">
+    <div class="shadow2"></div>
+  </div>
+</main>
+
+
+
+CSS
+body {
+  background: #52bf90;
+  animation: fadeIn 2s ease-in;
+}
+main {
+  position: relative;
+  margin: 0 auto;
+  top: 22.5vmin;
+  height: 50vmin;
+  width: 28.5vmin;
+  animation: float 6s ease-in-out infinite;
+}
+.pop {
+  overflow: hidden;
+  position: relative;
+  top: 1.5vmin;
+  margin: 0 auto;
+  background: #e8d174;
+  height: 40.5vmin;
+  width: 25.5vmin;
+  border-radius: 49% 49% 0 0;
+  z-index: 2;
+}
+.shadow {
+  position: relative;
+  top: -1.0vmin;
+  left: 4vmin;
+  margin: 0 auto;
+  background: grey;
+  opacity: .1;
+  height: 42.5vmin;
+  width: 25.5vmin;
+  border-radius: 60% 0 0 0;
+  z-index: 3;
+}
+.stick {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  top: -1.1vmin;
+  height: 15.25vmin;
+  width: 6.5vmin;
+  background: #cebf94;
+  border-radius: 0 0 5% 5%;
+  z-index: 1;
+}
+.shadow2 {
+  position: relative;
+  margin: 0 auto;
+  top: -1.1vmin;
+  left: 2vmin;
+  height: 18.25vmin;
+  width: 6.5vmin;
+  background: grey;
+  opacity: .1;
+  border-radius: 0 0 5% 5%;
+  z-index: 1;
+}
+
+/* Keyframes */
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+ }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} 
+
+@keyframes float {
+0% {
+transform: translatey(0px);
+}
+50% {
+transform: translatey(-20px);
+}
+100% {
+transform: translatey(0px);
+}
+}
