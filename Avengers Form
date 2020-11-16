@@ -1,0 +1,256 @@
+HTML
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <img class="img" src="http://www.stickpng.com/assets/images/5842a4f5a6515b1e0ad75af6.png">
+      <h1 id="title">Avengers Form</h1>
+          <p id="description">Fill this up to join The Avengers</p>
+
+
+      <form id="survey-form" action="" mathod="GET">
+          <div class="row-tab">
+          <div class="labels">
+            <label for="name" id="name-label">* Name: </label>
+          </div>
+
+           <div class="form-box">
+          <input type="text" id="name" class="input-field" name="name" placeholder="Enter your name" required>
+        </div>
+        </div>
+       
+       
+        
+        <div class="row-tab">
+          <div class="labels">
+            <label for="email" id="email-label">* Email: </label>
+          </div>
+           <div class="form-box">
+          <input type="email" id="email" class="input-field" name="email" placeholder="Enter your email" required>
+        </div>
+        </div>
+       
+       
+        <div class="row-tab">
+          <div class="labels">
+            <label for="age" id="number-label">* Age: </label>
+          </div>
+          <div class="form-box">
+          <input type="number" id="number" class="input-field" name="age" placeholder="Age" min="10" max="60">
+        </div>
+        </div>
+        
+        
+
+          <div class="row-tab">
+            <div class="labels">
+            <label for="hero-name">Which option best describes your Super Hero name?</label>
+          </div>
+          
+          <div class="form-box">
+            <select id="dropdown" name="hero-name" class="dropdown">
+              <option selected disabled value="1">Select an option</option>
+              <option name="dropdown" value="2">Spectacular</option>
+              <option name="dropdown" value="3">Incredible</option>
+              <option name="dropdown" value="4">Invincible</option>
+              <option name="dropdown" value="5">Amazing</option>
+            </select>
+          </div>
+        </div>
+
+          <div class="row-tab">
+            <div class="labels">
+            <label>* Do you want to join The Avengers? </label>
+          </div>
+          
+          <div class="form-box">
+            <ul>
+              <li class="radio"><label><input type="radio" name="radio" value="0" class="user-ratings"> Definitely</label></li>
+              <li class="radio"><label><input type="radio" name="radio" value="1" class="user-ratings"> Maybe</label></li>
+              <li class="radio"><label><input type="radio" name="radio" value="2" class="user-ratings"> Not sure</label></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="row-tab">
+             <div class="labels">
+            <label>What do you like most in Avengers? </label>
+          </div>
+          
+          <div class="form-box">
+            <select name="dropdown" class="dropdown">
+              <option selected disabled>Select an option</option>
+              <option value="0">Free Food</option>
+              <option value="1">Fights with Super Villains</option>
+              <option value="2">Black Widow</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+        </div>
+
+          <div class="row-tab">
+            <div class="labels">
+            <p>Which super powers do you posses?(Check all that apply): </p>
+          </div>
+          
+
+          <div class="form-box">
+            <ul>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox0" value="0" id="checkbox0">Invisibility</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox1" value="1" id="checkbox1">Flying</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox2" value="2" id="checkbox2">Heat Vision</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox3" value="3" id="checkbox3">Claws</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox4" value="4" id="checkbox4">Super Strength</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox5" value=5 id="checkbox5">Speed</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox6" value=6 id="checkbox6">Telekinesis</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox7" value=7 id="checkbox7">Bullet proof</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox8" value=8 id="checkbox8">Rage</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox9" value=9 id="checkbox9">Shape Shifting</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox10" value="10" id="checkbox10">Super rich XD</label></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="row-tab">
+            <div class="labels">
+            <label for="textarea">Any comments or Suggestions?</label>
+          </div>
+          
+          <div class="form-box">
+            <textarea name="textarea" id="textarea" class="input-field" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="btn">
+            <input class="button" type="submit" value="submit" id="submit">
+          </div>
+        </div>
+          </form>
+        </div>
+        
+      
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    
+    
+    CSS
+    html,
+body {
+	background-color: #F8E891;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	min-width: 320px;
+	font-family: raleway, 'sans-serif';
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 75%;
+	max-width: 900px;
+	padding: 10px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 1%;
+}
+
+.img {
+	max-width: 15%;
+	float: right;
+}
+/*************Text**************/
+
+h1 {
+	text-align: center;
+	font-family: 'Poiret One', 'cursive', 'sans-serif';
+}
+
+#description {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+
+
+
+/*************Forms**************/
+
+.labels {
+	display: inline-block;
+	text-align: right;
+	width: 40%;
+	padding: 5px;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.form-box {
+	display: inline-block;
+	text-align: left;
+	width: 48%;
+	vertical-align: middle;
+}
+
+.input-field {
+	height: 20px;
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #c0c0c0;
+	border-radius: 2px;
+}
+
+.user-ratings,
+input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+}
+
+.radio, .checkbox {
+	rosition: relative;
+	left: -43px;
+	margin-left: 10px;
+	display: block;
+	padding-bottom: 10px;
+}
+
+
+/*************Lists**************/
+
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
