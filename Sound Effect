@@ -1,0 +1,40 @@
+HTML
+<script>
+var bleep = new Audio();
+bleep.src = 'https://www.soundjay.com/button/sounds/beep-10.mp3';
+</script>
+</head>
+<body>
+  <h2 style="text-align: center">Button Sound Effects - Audible Menu Systems</h2>
+  <h3 style="text-align: center">Click the buttons in the menu!!!</h3>
+  
+  <nav id="nav1" style="text-align: center">
+    <a href="#" onmousedown="bleep.play()">Home</a>
+    <a href="#" onmousedown="bleep.play()">About Us</a>
+    <a href="#" onmousedown="bleep.play()">Services</a>
+    <a href="#" onmousedown="bleep.play()">Contact</a>
+  </nav>
+  
+  <div style="text-align: center" id="footer">
+     </div>
+     
+     
+     
+     
+     CSS
+     html{
+  background-color: lightgreen;
+}
+
+
+nav#nav1{ margin-top: 24px; }
+nav#nav1 > a{ background:#B9E1FF; color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+nav#nav1 > a:hover{ background: #BBEA00; }
+nav#nav1 > a:active{ background: #EEFFA8; }
+
+
+#footer {color: #000}
+#footer a:link{ color: #000; }
+#footer a:hover{ background: #BBEA00; }
+#footer a:visited{ color: #000; }
+#footer a:active{ background: #EEFFA8; }
