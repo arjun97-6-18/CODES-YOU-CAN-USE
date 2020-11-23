@@ -1,0 +1,101 @@
+HTML
+
+<div class="logo">
+    <div class="top"></div>
+    <div class="bottom-wings-left"></div>
+    <div class="bottom-wings-right"></div>
+  </div>
+
+
+CSS
+
+body{
+  background-color: #e3e3e3;
+}
+
+.logo{
+  width: 450px;
+  height: 240px;
+  border: 45px #ffff4d solid;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin: -225px 0 0 -120px;
+}
+
+.logo div, div:after, div:before{
+    position: absolute;
+}
+
+.top{
+  width: 20px;
+  height: 0;
+  border-top: 22px solid #ffff4d;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  top: -1px;
+  left: 205px;  
+}
+
+.top:after, .top:before, .bottom-wings-left, .bottom-wings-right{
+  content: '';
+  border-radius: 50% / 45%;
+  background: #ffff4d;
+}
+
+.top:after{
+  width: 80px;
+  height: 90px;
+  background: #ffff4d;
+  top: -55px;
+  right: 34px;
+  transform: rotate(9deg);
+}
+
+.top:before{
+  width: 80px;
+  height: 90px;
+  margin-top: -55px;
+  margin-left: 34px;
+  transform: rotate(-9deg);
+}
+
+.bottom-wings-left{
+  width: 80px;
+  height: 90px;
+  transform: rotate(-40deg);
+  top: 170px;
+  left: 65px;
+}
+
+.bottom-wings-left:after, .bottom-wings-left:before{
+  content: "";
+  border-radius: 50%;
+  background: #ffff4d;
+}
+
+.bottom-wings-left:after{
+  width: 120px;
+  height: 90px;
+  transform: rotate(-15deg);
+  top: 120px;
+  left: 110px;
+}
+
+.bottom-wings-left:before{
+  width: 120px;
+  height: 90px;
+  transform: rotate(-90deg);
+  top: 60px;
+  left: 28px;
+}
+
+.bottom-wings-right{
+  width: 80px;
+  height: 90px;
+  transform: rotate(40deg);
+  top: 170px;
+  left: 315px;
+}
